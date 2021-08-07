@@ -65,5 +65,27 @@
   <footer class="page-footer">
 
   </footer>
+
+  <section class="popup popup--closed">
+    <div class="popup__wrapper">
+      <h2>Закажите звонок</h2>
+      <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <label for="user-name" aria-label="Ваше имя"></label>
+        <input type="text" name="user-name" id="user-name" placeholder="Имя" required>
+        <label for="user-tel" aria-label="Ваш номер телефона"></label>
+        <input type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required>
+        <textarea placeholder="Ваш вопрос"></textarea>
+        <button class="popup__button" type="submit">Отправить</button>
+        <div class="popup__agreement">
+          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" checked required>
+          <label for="agreement">Я согласен на обработку  персональных данных</label>
+        </div>
+        <button class="popup__button-close" type="button" aria-label="Закрыть окно"></button>
+      </form>
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
 </body>
 </html>

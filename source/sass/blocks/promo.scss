@@ -1,11 +1,36 @@
 .promo {
-  display: flex;
   background-color: #1b2d37;
+  background-image: url(../img/main_mask.svg),
+                    url(../img/main_background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.promo__wrapper {
+  display: flex;
+  width: 1580px;
+  margin: 0 auto;
+  padding-top: 150px;
+}
+
+.promo__wrapper img {
+  display: block;
+  overflow: hidden;
+}
+
+.promo__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 720px;
+  margin: 0 70px 0 80px;
 }
 
 .promo__text h2 {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
+  padding-top: 58px;
   font-size: 80px;
   line-height: 94px;
   font-weight: bold;
@@ -14,16 +39,30 @@
 }
 
 .promo__text p {
+  position: relative;
   margin: 0;
-  margin-bottom: 37px;
+  margin-bottom: 44px;
+  padding-left: 98px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: normal;
   font-size: 22px;
   line-height: 34px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 14px;
+    left: 3px;
+    width: 66px;
+    height: 2px;
+    background-color: $white;
+  }
 }
 
 .promo__button {
-  padding: 17px 28px;
+  margin-left: 98px;
+  margin-bottom: 93px;
+  padding: 17px 45px;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
@@ -32,17 +71,32 @@
   color: $white;
   background-color: $blue;
   border-radius: 5px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }
 
 .promo__scroll {
+  margin-bottom: 92px;
   font-family: "PT Mono", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
   color: $white;
   opacity: 0.5;
-}
+  writing-mode: vertical-lr;
+  transform: rotate(180deg);
 
-.promo img {
-  display: block;
+  &:hover {
+    color: $blue;
+  }
+
+  &:active {
+    opacity: 0.2;
+  }
 }

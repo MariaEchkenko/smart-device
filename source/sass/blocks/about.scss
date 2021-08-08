@@ -1,0 +1,102 @@
+.about {
+  color: $dark-grey;
+}
+
+.about__wrapper {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-left: 194px;
+  padding-right: 20px;
+  padding-top: 80px;
+  box-sizing: border-box;
+
+  @media (max-width: 1023px) {
+    padding: 30px 20px 0 210px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 30px 15px 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 220px;
+    height: 317px;
+    left: -15px;
+    background-image: url("../img/year.png");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+
+    @media (max-width: 1023px) {
+      left: 0;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+
+.about__wrapper h2 {
+  margin: 0;
+  margin-bottom: 18px;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 51px;
+
+  @media (max-width: 1023px) {
+    font-size: 32px;
+    line-height: 45px;
+  }
+}
+
+.about__wrapper p {
+  margin: 0;
+  margin-bottom: 24px;
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.about__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 110px;
+  padding: 14px 50px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $blue;
+  background-color: transparent;
+  border: 1px solid $blue;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
+}
+
+.about__long-text {
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.about__tablet-hidden {
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}

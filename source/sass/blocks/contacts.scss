@@ -1,0 +1,21 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 1023px) {
+    padding-right: 10px;
+  }
+}
+
+.contacts p {
+  margin: 0;
+}
+
+.contacts p,
+.contacts__link {
+  font-family: "PT Mono", "Arial", sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  color: $background;
+  opacity: 0.5;
+}

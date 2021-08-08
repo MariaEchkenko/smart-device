@@ -43,7 +43,7 @@
   </header>
 
   <main class="page-main">
-    <section class="promo">
+    <!-- <section class="promo">
       <div class="promo__wrapper">
         <div class="promo__description">
           <div class="promo__text">
@@ -55,15 +55,75 @@
         </div>
         <picture>
           <source type="image/webp" srcset="img/printed_circuit_board.webp, img/printed_circuit_board@2x.webp 2x">
-          <!-- 1х: 705px/515px; 2x: 1410px/1030px -->
+           1х: 705px/515px; 2x: 1410px/1030px
           <img src="img/printed_circuit_board.png" srcset="img/printed_circuit_board@2x.png 2x" width="705" height="515" alt="Изображение стопки печатных плат, разложенных веером">
         </picture>
       </div>
-    </section>
+    </section> -->
   </main>
 
   <footer class="page-footer">
-
+    <div class="page-footer__wrapper">
+      <div class="page-footer__block">
+        <a class="page-footer__logo">
+          <img src="img/footer_logo.svg" width="216" height="52" alt="Smart Device. Логотип сайта по производству и монтажу печатных плат">
+        </a>
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
+                <svg width="27" height="27" fill="none">
+                  <use xlink:href="img/sprite.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Мы в Одноклассниках">
+                <svg width="27" height="26" fill="none">
+                  <use xlink:href="img/sprite.svg#classmates"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#" aria-label="Мы в Контакте">
+                <svg width="27" height="26" fill="none">
+                  <use xlink:href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__nav">
+        <h3>Разделы сайта</h3>
+        <ul class="page-footer__list">
+          <li class="page-footer__item"><a href="#">О компании</a></li>
+          <li class="page-footer__item"><a href="#">Продукты</a></li>
+          <li class="page-footer__item"><a href="#">Производство печатных плат</a></li>
+          <li class="page-footer__item"><a href="#">Монтаж печатных плат</a></li>
+          <li class="page-footer__item"><a href="#">Комплектующие</a></li>
+          <li class="page-footer__item"><a href="#">Доставка</a></li>
+          <li class="page-footer__item"><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="page-footer__contacts contacts">
+        <h3>Наш офис</h3>
+        <div class="page-footer__contacts-list">
+          <p>г. Мытищи, Олимпийский проспект, д.10</p>
+          <a class="contacts__link" href="tel:+74955894050">+7 (495) 589-40-50</a>
+          <a class="contacts__link" href="tel:+79250038767">+7 (925) 003-87-67</a>
+          <a class="contacts__link" href="tel:+792692608079">+7 (926) 926-080-79</a>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__copyright">
+      <div class="page-footer__authors">
+        <p>Все права защищены</p>
+        <p>1999-2018&nbsp;SD&nbsp;Service&nbsp;Devices</p>
+      </div>
+      <p>Условия конфиденциальности</p>
+      <p>Developed by wow studio </p>
+    </div>
   </footer>
 
   <section class="popup popup--closed">
@@ -78,7 +138,7 @@
         <textarea placeholder="Ваш вопрос"></textarea>
         <button class="popup__button" type="submit">Отправить</button>
         <div class="popup__agreement">
-          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" checked="">
+          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" checked="" required="">
           <label for="agreement">Я согласен на обработку  персональных данных</label>
         </div>
         <button class="popup__button-close" type="button" aria-label="Закрыть окно"></button>

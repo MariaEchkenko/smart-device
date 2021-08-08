@@ -1,14 +1,15 @@
 .page-header {
   background-color: #1b2d37;
-  margin-bottom: 3643px;
 }
 
 .page-header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   max-width: 1420px;
   margin: 0 auto;
   padding: 32px 10px 23px;
+  z-index: 5;
 
   @media (max-width: 1023px) {
     max-width: 100%;

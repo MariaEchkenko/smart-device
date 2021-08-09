@@ -12,11 +12,11 @@
   box-sizing: border-box;
 
   @media (max-width: 1023px) {
-    padding: 30px 20px 0 210px;
+    padding: 25px 20px 0 210px;
   }
 
   @media (max-width: 767px) {
-    padding: 30px 15px 0;
+    padding: 35px 15px 0;
   }
 
   &::before {
@@ -30,7 +30,10 @@
     background-position: 50% 50%;
 
     @media (max-width: 1023px) {
-      left: 0;
+      left: -3px;
+      width: 251px;
+      height: 362px;
+      background-image: url("../img/year_tablet.png");
     }
 
     @media (max-width: 767px) {
@@ -47,8 +50,15 @@
   line-height: 51px;
 
   @media (max-width: 1023px) {
+    margin-bottom: 25px;
     font-size: 32px;
     line-height: 45px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 23px;
+    font-size: 28px;
+    line-height: 39px;
   }
 }
 
@@ -58,6 +68,22 @@
   font-family: "PT Mono", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
+
+  @media (max-width: 1023px) {
+    padding-left: 3px;
+    margin-bottom: 21px;
+  }
+
+  @media (max-width: 767px) {
+    padding-left: 0;
+    margin-bottom: 41px;
+  }
+}
+
+.about__wrapper p:last-of-type {
+  @media (max-width: 767px) {
+    margin-bottom: 31px;
+  }
 }
 
 .about__button {
@@ -65,7 +91,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 40px;
-  margin-bottom: 110px;
+  margin-bottom: 107px;
   padding: 14px 50px;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: bold;
@@ -78,6 +104,15 @@
   border: 1px solid $blue;
   border-radius: 5px;
   cursor: pointer;
+
+  @media (max-width: 1023px) {
+    margin-top: 20px;
+    margin-bottom: 83px;
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 65px;
+  }
 
   &:hover {
     color: $white;

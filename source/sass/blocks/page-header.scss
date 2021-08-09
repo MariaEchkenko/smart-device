@@ -20,3 +20,14 @@
     padding: 17px 16px 0;
   }
 }
+
+.page-header__logo {
+  padding-left: 3px;
+}
+
+.page-header__logo img {
+  @media (max-width: 767px) {
+    width: 38px;
+    height: 38px;
+  }
+}

@@ -260,6 +260,10 @@
   background-position: 50% 50%;
 }
 
+.feedback__agreement input:focus + label:before {
+  outline: 1px solid black;
+}
+
 .feedback__button {
   display: flex;
   justify-content: center;

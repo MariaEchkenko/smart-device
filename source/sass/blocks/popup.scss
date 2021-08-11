@@ -1,15 +1,13 @@
 .popup {
+  display: none;
   position: fixed;
-  top: 136px;
+  width: 100%;
+  height: 100%;
   left: 0;
   right: 0;
-  width: 490px;
-  margin: auto;
-  background-color: $blue;
-
-  &--closed {
-    display: none;
-  }
+  padding-top: 136px;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  z-index: 20;
 
   &--opened {
     display: block;
@@ -17,7 +15,12 @@
 }
 
 .popup__wrapper {
+  position: relative;
+  width: 490px;
+  margin: auto;
   padding: 30px 38px 40px;
+  background-color: $blue;
+  box-sizing: border-box;
 }
 
 .popup__wrapper h2 {
@@ -38,6 +41,7 @@
 }
 
 .popup form {
+  //position: relative;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -117,6 +121,10 @@
   background-image: url("../img/check_icon.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
+}
+
+.popup__agreement input:focus + label:before {
+  outline: 1px solid black;
 }
 
 .popup__button {

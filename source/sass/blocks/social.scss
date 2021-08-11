@@ -5,7 +5,17 @@
   list-style: none;
 
   @media (max-width: 767px) {
-    margin-top: 81px;
+    margin-top: 12px;
+  }
+}
+
+.social__link svg {
+  &:hover {
+    fill: $blue;
+  }
+
+  &:active {
+    opacity: 0.5;
   }
 }
 

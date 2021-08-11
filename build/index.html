@@ -56,7 +56,7 @@
         <div class="promo__img">
           <picture>
             <source type="image/webp" srcset="img/printed_circuit_board.webp, img/printed_circuit_board@2x.webp 2x">
-             <!-- 1х: 705px/515px; 2x: 1410px/1030px -->
+              <!-- 1х: 705px/515px; 2x: 1410px/1030px -->
             <img src="img/printed_circuit_board.png" srcset="img/printed_circuit_board@2x.png 2x" width="705" height="515" alt="Изображение стопки печатных плат, разложенных веером">
           </picture>
         </div>
@@ -122,7 +122,7 @@
               <p>Производство печатных плат</p>
               <picture>
                 <source type="image/webp" srcset="img/services_img1.webp, img/services_img1@2x.webp 2x">
-                 <!-- 1х: 370px/620px; 2x: 740px/1240px -->
+                  <!-- 1х: 370px/620px; 2x: 740px/1240px -->
                 <img src="img/services_img1.png" srcset="img/services_img1@2x.png 2x" width="370" height="620" alt="Печатная плата">
               </picture>
             </a>
@@ -132,7 +132,7 @@
               <p>Монтаж печатных плат</p>
               <picture>
                 <source type="image/webp" srcset="img/services_img2.webp, img/services_img2@2x.webp 2x">
-                 <!-- 1х: 370px/620px; 2x: 740px/1240px -->
+                  <!-- 1х: 370px/620px; 2x: 740px/1240px -->
                 <img src="img/services_img2.png" srcset="img/services_img2@2x.png 2x" width="370" height="620" alt="Печатная плата">
               </picture>
             </a>
@@ -142,7 +142,7 @@
               <p>Комплектующие для светотехники</p>
               <picture>
                 <source type="image/webp" srcset="img/services_img3.webp, img/services_img3@2x.webp 2x">
-                 <!-- 1х: 370px/620px; 2x: 740px/1240px -->
+                  <!-- 1х: 370px/620px; 2x: 740px/1240px -->
                 <img src="img/services_img3.png" srcset="img/services_img3@2x.png 2x" width="370" height="620" alt="Печатная плата">
               </picture>
             </a>
@@ -158,9 +158,9 @@
           <p>Мы проконсультируем Вас бесплатно</p>
           <form action="https://echo.htmlacademy.ru" method="post">
             <div class="feedback__input-wrapper">
-              <label for="user-name" aria-label="Ваше имя"></label>
+              <label class="visually-hidden" for="user-name" aria-label="Ваше имя"></label>
               <input type="text" name="user-name" id="user-name" placeholder="Имя" required="">
-              <label for="user-tel" aria-label="Ваш номер телефона"></label>
+              <label class="visually-hidden" for="user-tel" aria-label="Ваш номер телефона"></label>
               <input type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required="">
               <textarea placeholder="Ваш вопрос"></textarea>
             </div>
@@ -183,25 +183,26 @@
         <a class="page-footer__logo">
           <img src="img/footer_logo.svg" width="216" height="52" alt="Service Device. Логотип сайта">
         </a>
+        <span>1999-2018 SD Service Devices</span>
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Мы в Фейсбуке">
-                <svg width="27" height="27" fill="none">
+                <svg width="27" height="27" fill="#cdcdcd">
                   <use xlink:href="img/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Мы в Одноклассниках">
-                <svg width="27" height="26" fill="none">
+                <svg width="27" height="26" fill="#cdcdcd">
                   <use xlink:href="img/sprite.svg#classmates"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="#" aria-label="Мы в Контакте">
-                <svg width="27" height="26" fill="none">
+                <svg width="27" height="26" fill="#cdcdcd">
                   <use xlink:href="img/sprite.svg#vk"></use>
                 </svg>
               </a>
@@ -241,25 +242,25 @@
     </div>
   </footer>
 
-  <section class="popup popup--closed">
+  <section class="popup">
     <div class="popup__wrapper">
       <h2>Закажите звонок</h2>
       <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <form action="https://echo.htmlacademy.ru" method="post">
         <label for="user-name" aria-label="Ваше имя"></label>
-        <input type="text" name="user-name" id="user-name" placeholder="Имя" required="">
+        <input type="text" name="user-name" id="popup-name" placeholder="Имя" required="">
         <label for="user-tel" aria-label="Ваш номер телефона"></label>
-        <input type="tel" name="user-tel" id="user-tel" placeholder="Телефон" required="">
-        <textarea placeholder="Ваш вопрос"></textarea>
+        <input type="tel" name="user-tel" id="popup-tel" placeholder="Телефон" required="">
+        <textarea id="popup-text" name="text" placeholder="Ваш вопрос"></textarea>
         <button class="popup__button" type="submit">Отправить</button>
         <div class="popup__agreement">
-          <input class="visually-hidden" type="checkbox" name="agreement" id="agreement" checked="" required="">
-          <label for="agreement">Я согласен на обработку  персональных данных</label>
+          <input class="visually-hidden" type="checkbox" name="popup-agreement" id="popup-agreement" checked="" required="">
+          <label for="popup-agreement">Я согласен на обработку  персональных данных</label>
         </div>
         <button class="popup__button-close" type="button" aria-label="Закрыть окно"></button>
       </form>
     </div>
-  </section>
+  </section> -->
 
   <script src="js/script.js"></script>
 </body>

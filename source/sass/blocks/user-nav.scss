@@ -98,6 +98,10 @@
     opacity: 0.5;
   }
 
+  &:focus {
+    outline: 2px solid orange;
+  }
+
   @media (min-width: 1024px) and (max-width: 1420px) {
     margin-right: 0;
   }

@@ -1,28 +1,34 @@
 'use strict';
 
-var navButton = document.querySelector('.page-footer__nav h3');
-var navList = document.querySelector('.page-footer__list');
-var contactsButton = document.querySelector('.page-footer__contacts h3');
-var contactsList = document.querySelector('.page-footer__contacts-list');
+(function () {
+  var accrodionElements = document.querySelectorAll('.page-footer__accordion');
+  var accordionButtons = document.querySelectorAll('.page-footer__accordion h3');
+  var mobileScreen = window.matchMedia('(max-width: 767px)');
 
-if (navList.classList.contains('page-footer__list--active')) {
-  navList.classList.remove('page-footer__list--active');
-}
-
-if (contactsList.classList.contains('page-footer__contacts-list--active')) {
-  contactsList.classList.remove('page-footer__contacts-list--active');
-}
-
-navButton.addEventListener('click', function () {
-  navList.classList.toggle('page-footer__list--active');
-  if (contactsList.classList.contains('page-footer__contacts-list--active')) {
-    contactsList.classList.remove('page-footer__contacts-list--active');
+  if (accrodionElements) {
+    for (var i = 0; i < accrodionElements.length; i++) {
+      accrodionElements[i].classList.remove('page-footer__accordion--nojs');
+    }
   }
-});
 
-contactsButton.addEventListener('click', function () {
-  contactsList.classList.toggle('page-footer__contacts-list--active');
-  if (navList.classList.contains('page-footer__list--active')) {
-    navList.classList.remove('page-footer__list--active');
+  if (accordionButtons) {
+    for (var k = 0; k < accordionButtons.length; k++) {
+      accordionButtons[k].addEventListener('click', function (evt) {
+        evt.preventDefault();
+        if (mobileScreen.matches) {
+          var array = Array.from(accordionButtons);
+          var target = evt.target;
+          var index = array.indexOf(target);
+
+          array.forEach(function (item, j) {
+            if (j === index) {
+              accrodionElements[j].classList.toggle('page-footer__accordion--active');
+            } else {
+              accrodionElements[j].classList.remove('page-footer__accordion--active');
+            }
+          });
+        }
+      });
+    }
   }
-});
+})();

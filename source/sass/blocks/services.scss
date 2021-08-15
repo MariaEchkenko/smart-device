@@ -73,7 +73,8 @@
   }
 
   @media (max-width: 1023px) {
-    width: min-content;
+    width: 100%;
+    max-width: 715px;
     margin-bottom: 46px;
   }
 
@@ -144,7 +145,11 @@
     height: 256px;
   }
 
-  @media (max-width: 767px) {
-    width: 290px;
+  @media (max-width: 790px) {
+    width: 100%;
   }
+
+  /*@media (max-width: 767px) {
+    width: 290px;
+  }*/
 }

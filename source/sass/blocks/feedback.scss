@@ -53,7 +53,7 @@
   }
 }
 
-.feedback__img {
+.feedback__form {
   position: relative;
 
   &::before {
@@ -75,9 +75,7 @@
       display: none;
     }
   }
-}
 
-.feedback__form {
   @media (max-width: 1023px) {
     padding-left: 5px;
   }
@@ -230,6 +228,10 @@
   }
 }
 
+.feedback__agreement input {
+  display: none;
+}
+
 .feedback__agreement label {
   position: relative;
   padding-left: 32px;
@@ -268,7 +270,7 @@
   outline: 1px solid black;
 }
 
-.feedback__button {
+.feedback__button-wrapper button {
   display: flex;
   justify-content: center;
   align-items: center;

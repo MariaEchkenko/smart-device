@@ -87,6 +87,10 @@
   display: flex;
 }
 
+.popup__agreement input {
+  display: none;
+}
+
 .popup__agreement label {
   position: relative;
   padding-left: 48px;

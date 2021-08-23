@@ -3,7 +3,7 @@
 (function () {
   var userPhone = document.querySelector('#user-tel');
   var userName = document.querySelector('#user-name');
-  var buttonForm = document.querySelector('.feedback__button');
+  var buttonForm = document.querySelector('.feedback__button-wrapper button');
 
   var im = new Inputmask('+7 (999) 999-99-99');
   if (userPhone) {
@@ -51,5 +51,3 @@
     userName.setCustomValidity('');
   });
 })();
-
-

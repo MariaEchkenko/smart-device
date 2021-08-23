@@ -1,11 +1,14 @@
 .social__list {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 210px;
   margin: 0;
   padding: 0;
   list-style: none;
 
   @media (max-width: 767px) {
     margin-top: 12px;
+    max-width: 100%;
   }
 }
 

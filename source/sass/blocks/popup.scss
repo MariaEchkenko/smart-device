@@ -129,7 +129,7 @@
   background-position: 50% 50%;
 }
 
-.popup__agreement input:focus + label:before {
+.popup__agreement input:focus + label::before {
   outline: 1px solid black;
 }
 

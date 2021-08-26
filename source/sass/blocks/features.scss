@@ -58,7 +58,6 @@
   background-color: $white;
   border: 1px solid #ebebeb;
   border-left: 3px solid $blue;
-  cursor: pointer;
 
   @media (max-width: 1200px) {
     width: calc((100% - 30px) / 2);
